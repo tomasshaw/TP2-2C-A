@@ -31,8 +31,7 @@ if (argv !== 'Redux' && argv !== 'Flexbox' && argv !== undefined) {
 
 const buscar = argv || 'Redux'
 const ReduxArray = []
-const s = str.split('\n')
-const a = s.map(line => {
+str.split('\n').map(line => {
 	const matched = line.match(buscar)
 	matched && ReduxArray.push(matched.input)
 })
